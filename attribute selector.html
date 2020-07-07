@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .testarea{
+            width: 1500px;
+            height: 800px;
+            border: red 1px solid;
+            font-size: 20px;
+            background-color: cornsilk;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 300px;
+            height: 300px;
+            border: red 1px solid;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+        }
+        [id]{
+            background-color: slategrey;
+            color: red;
+        }
+        [id="安安你好這是一串的id"]{
+            background-color: rgb(236, 147, 223);
+            color: rgb(10, 7, 179);
+        }
+        [id^="bear"]{
+            background-color: rgb(173, 90, 90);
+            color: rgb(2, 2, 4);
+        }
+        [id$="這是一"]{
+            background-color: rgb(236, 247, 111);
+            color: rgb(75, 2, 73);
+        }
+        [id*="阿"]{
+            background-color: rgb(221, 255, 0);
+            color: rgb(31, 4, 184);
+        }
+        [id~="apple"]{
+            background-color: rgb(0, 247, 235);
+            color: rgb(0, 0, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="testarea">
+        <div class="item" id="hello">單純選取屬性 [屬性]</div>
+        <div class="item" id="安安你好這是一串的id" >完全等於 [屬性=值]</div>
+        <div class="item" id="bear安安的id" >開頭等於 [屬性^=值]</div>
+        <div class="item" id="安安你好 這是一" >結尾等於 [屬性$=值]</div>
+        <div class="item" id="安安這天阿是一串" >包含特定文字 [屬性*=值]</div>
+        <div class="item" id="安好是的dOK apple  啦啦啦" >包含特定單字 [屬性~=值] </div>
+    </div>
+</body>
+</html>

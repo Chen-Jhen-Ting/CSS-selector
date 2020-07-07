@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .testbox{
+            width: 1000px;
+            height: 1000px;
+            background-color: moccasin;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ball{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            border: 10px rgb(191, 0, 146);
+            border-radius: 50%;
+            background-color: red;
+            font-size: 30px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .solid{
+            border-style: solid;
+        }
+        .dotted{
+            border-style: dotted;
+        }        
+        .dashed{
+            border-style: dashed;
+        }
+        .double{
+            border-style: double;
+        }
+        .outset{
+            border-style: outset;
+        }
+        .groove{
+            border-style: groove;
+        }
+        .ridge{
+            border-style: ridge;
+        }
+        .inset{
+            border-style: inset;
+        }
+        .none{
+            border-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="testbox">
+        <div class="ball solid">border-style:solid;</div>
+        <div class="ball dotted">border-style:dotted;</div>
+        <div class="ball dashed">border-style:dashed;</div>
+        <div class="ball double">border-style:double;</div>
+        <div class="ball outset">border-style:outset;</div>
+        <div class="ball groove">border-style:groove;</div>
+        <div class="ball ridge">border-style:ridge;</div>
+        <div class="ball inset">border-style:inset;</div>
+        <div class="ball none">border-style:none;</div>
+    </div>
+</body>
+</html>

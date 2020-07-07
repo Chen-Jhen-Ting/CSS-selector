@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shop{
+            width: 1500px;
+            height: 500px;
+            margin: auto;
+            font-size: 30px;
+            color: blue;
+            background-color: cornsilk;
+        }
+        .fruit{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        h1{
+            display: block;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        #apple{
+            order: 3;
+        }
+        #banana{
+            order:2;
+            background-color: rgb(228, 182, 225);
+            font-size: 30px;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class=shop>
+        <h1>Fruit shop</h1>
+         <div class="fruit">
+            <div><img src="/fruit-shop/apple.png" alt=""><p>id is apple</p></div>
+            <div><img src="/fruit-shop/banana.jpeg" alt=""><p>id is banana</p></div>
+            <div><img src="/fruit-shop/strawberry.jpeg" alt=""><p>id is strawberry</p></div>
+            <div><img src="/fruit-shop/matermelon.jpeg" alt=""><p>id is watermelon</p></div>
+            <div><img src="/fruit-shop/pineapple.jpeg" alt=""><p>id is pineapple</p></div>
+        </div>
+    </div>
+
+    <div class=shop>
+        <h1>Fruit shop  id select controled</h1>
+         <div class="fruit">
+            <div  id="apple"> <img src="/fruit-shop/apple.png" alt=""><p>id is apple</p></div>
+            <div  id="banana"> <img src="/fruit-shop/banana.jpeg" alt=""><p>id is banana</p></div>
+            <div  id="strawberry"><img src="/fruit-shop/strawberry.jpeg" alt=""><p>id is strawberry</p></div>
+            <div  id="watermelon"><img src="/fruit-shop/matermelon.jpeg" alt=""><p>id is watermelon</p></div>
+            <div  id="pineapple"><img src="/fruit-shop/pineapple.jpeg" alt=""><p>id is pineapple</p></div>
+        </div>
+    </div>
+</body>
+</html> 

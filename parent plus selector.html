@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .plusselector{
+            width: 700px;
+            height: 300px;
+            margin: auto;
+            background-color: tan;
+            font-size: 24px;
+            color: blue;
+        }
+        h1+p{
+            background-color: cyan;
+            border: red 1px solid;
+        }
+        .plusselector2{
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            background-color: tan;
+            font-size: 24px;
+            color: blue;
+            text-align: center;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            line-height: 200px;
+            /* 這一段是為了先把行高拉開，等等li行高再設定回去，內容會垂直置中間 */
+        }
+        li{ 
+            border: blue 1px solid;
+            width: 100px;
+            display: inline-block;
+            line-height: 40px;
+            padding: 5px;
+        }
+        li + li { 
+            border-left: 1px solid rgb(247, 8, 8); 
+        }
+        .centertext{
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="plusselector">
+        <h1>親代選取器 + </h1>
+        <p>被選到的</p>
+        <p>沒有被選走的</p>
+        <p>他也是沒被選走的</p>
+    </div>
+    <p class="centertext">親代選取器 + 2</p>
+    <div class="plusselector2">
+        
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
